@@ -1,14 +1,21 @@
-import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import logo from './logo.svg';
 import './App.css';
+import HotelCard from './components/Hotel/HotelCard';
+import Header from './components/Header/Header';
+import Chain from './containers/Chain';
+import Home from './containers/Home';
 
 function App() {
   return (
-    <div className="App">
-      <h1 className="text-3xl font-bold underline text-red-600 my-20">
-      Simple React Typescript Tailwind Sampleee
-    </h1>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/chain/:param" element={<Chain />} />
+
+      </Routes>
+    </Router>
+
   );
 }
 
