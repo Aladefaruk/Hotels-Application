@@ -134,10 +134,10 @@ const Chain = () => {
         chain.chain_name.toLowerCase().trim() === param &&
         (< div className='w-full  lg:m-10 my-14' >
           <div className='flex items-center justify-between lg:mx-5'>
-            <h1 className='text-[20px] font-semi-bold lg:text-[40px]'>{chain.chain_name} Hotels</h1>
+            <h1 className='text-[15px] font-semi-bold lg:text-[30px] text-[#A145E9]'>{chain.chain_name} Hotels</h1>
             <div className='lg:flex items-center'>
-              <span className='text-blue-400 cursor-pointer ' onClick={openEditModal}>Edit Chain</span>
-              <span className='text-red-300  ml-2 lg:ml-5 lg:mr-10 cursor-pointer' onClick={openDeleteModal}> Delete Chain</span>
+              <span className='text-[#4845E9] cursor-pointer ' onClick={openEditModal}>Edit Chain</span>
+              <span className='text-[#E94545]  ml-2 lg:ml-5 lg:mr-10 cursor-pointer' onClick={openDeleteModal}> Delete Chain</span>
             </div>
 
           </div>
@@ -169,7 +169,7 @@ const Chain = () => {
               ref={nameRef}
             />
             <div className='flex items-center text-center justify-center'>
-              <span className='text-xl bg-blue-600 text-white p-3 rounded-lg w-1/3 cursor-pointer' onClick={() => EditChainName(index)}>Submit</span>
+              <span className='text-xl bg-[#A145E9] text-white p-3 rounded-lg w-1/3 cursor-pointer' onClick={() => EditChainName(index)}>Submit</span>
 
             </div>
           </Modal>
@@ -229,12 +229,12 @@ const Chain = () => {
 
             {imageSrc && <img src={imageSrc} alt="Selected" style={{ width: '64px', height: '64px' }} />}
             <div className='flex items-center text-center justify-center'>
-              <span className='text-xl bg-blue-600 text-white p-3 rounded-lg w-1/3 cursor-pointer' onClick={() => AddNewHotel(index, chain)}>Submit</span>
+              <span className='text-xl bg-[#A145E9] text-white  p-3 rounded-lg w-1/3 cursor-pointer' onClick={() => AddNewHotel(index, chain)}>Submit</span>
 
             </div>
           </Modal>
 
-          < div className="w-full lg:w-1/6 h-[280px] rounded overflow-hidden shadow-lg bg-white lg:p-6 lg:m-4" >
+          < div className="w-full lg:w-1/6 h-[280px] rounded-xl overflow-hidden shadow-lg bg-white lg:p-6 lg:m-4 pt-14" >
             <div className="text-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -250,11 +250,10 @@ const Chain = () => {
                   d="M12 6v6m0 0v6m0-6h6m-6 0H6"
                 />
               </svg>
-              <h2 className="text-lg font-semibold mt-4">Add A Hotel</h2>
-              <p className="text-gray-500">Click the button below to add a new item.</p>
+              <h2 className="text-lg font-semibold mt-4 text-black">Add A Hotel</h2>
             </div>
             <div className="mt-6 text-center">
-              <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded" onClick={openModal}>
+              <button className="bg-[#A145E9] text-white  text-white font-bold py-2 px-4 rounded" onClick={openModal}>
                 Add Hotel
               </button>
             </div>

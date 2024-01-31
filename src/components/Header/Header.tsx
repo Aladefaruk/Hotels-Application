@@ -67,12 +67,12 @@ const Header = () => {
 
   return (
     <div className="fixed w-full bg-white z-20 shadow-md flex items-center justify-between py-5 top-0 px-7 lg:px-40">
-      <Link to='/'> <h1 className='text-[24px] lg:text-[44px] font-bold text-black-500 cursor-pointer'> Hotel Rankings</h1></Link>
-      <div className='p-1 lg:px-3 lg:py-2 rounded-md bg-[#24AB701A] text-[#24AB70] cursor-pointer font-bold text-lg lg:text-2xl hidden lg:flex' onClick={() => openModal()}>Add a New Chain +</div>
-      <div className='p-3 py-1 lg:px-3 lg:py-2 rounded-md bg-[#24AB701A] text-[#24AB70] cursor-pointer font-bold text-2xl lg:hidden' onClick={() => openModal()}> +</div>
+      <Link to='/'> <h1 className='text-[14px] lg:text-[24px] font-bold text-black-500 cursor-pointer'> Hotel Rankings</h1></Link>
+      <div className='p-1 lg:px-5 lg:py-2 rounded-md bg-[#A145E9] text-[#fff] cursor-pointer font-bold text-md lg:text-lg hidden lg:flex' onClick={() => openModal()}>Add a New Chain +</div>
+      <div className='p-3 py-1 lg:px-3 lg:py-2 rounded-md bg-[#A145E9] text-white cursor-pointer font-bold text-2xl lg:hidden' onClick={() => openModal()}> +</div>
 
       <Modal isOpen={isModalOpen} onClose={closeModal}>
-        <h1 className="text-3xl  font-bold mb-4">Add New Chain +  </h1>
+        <h1 className="text-3xl  font-bold mb-4 ">Add New Chain +  </h1>
         <input
           className="shadow appearance-none border rounded w-full py-2 px-3 my-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           id="inputField"
@@ -104,7 +104,7 @@ const Header = () => {
         {imageSrc && <img src={imageSrc} alt="Selected" style={{ width: '64px', height: '64px' }} />}
 
         <div className='flex items-center text-center justify-center'>
-          <span className='text-xl bg-blue-600 text-white p-3 rounded-lg w-1/3 cursor-pointer' onClick={() => AddChain()}>Submit</span>
+          <span className='text-xl bg-[#A145E9] text-white p-3 rounded-lg w-1/3 cursor-pointer' onClick={() => AddChain()}>Submit</span>
 
         </div>
 
